@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    background:
+        radial-gradient(circle at top, #252525 0%, #101010 45%, #050505 100%);
+
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 45px 40px;
+
+    background: rgba(20, 20, 20, 0.94);
+
+    border: 1px solid #2d2d2d;
+
+    border-radius: 26px;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.7),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* Icon */
+
+.icon {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #333333;
+
+    border-radius: 50%;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 22px;
+}
+
+/* Heading */
+
+h1 {
+    text-align: center;
+
+    font-size: 38px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #888888;
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+}
+
+/* Inputs */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #cccccc;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+
+    padding: 16px;
+
+    background: #0c0c0c;
+
+    border: 1px solid #333333;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    transition: 0.25s;
+}
+
+input::placeholder {
+    color: #5f5f5f;
+}
+
+input:focus {
+    border-color: #777777;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 255, 255, 0.04);
+}
+
+/* Calculate Button */
+
+#calculateBtn {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 8px;
+
+    border: 1px solid #ffffff;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+#calculateBtn:hover {
+    background: #dddddd;
+
+    transform: translateY(-2px);
+}
+
+/* Result */
+
+#result {
+    margin-top: 25px;
+
+    padding: 24px;
+
+    border-radius: 17px;
+
+    background: #111111;
+
+    border: 1px solid #2d2d2d;
+
+    text-align: center;
+}
+
+#result:empty {
+    display: none;
+}
+
+#result h2 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+#result p {
+    color: #999999;
+
+    margin-top: 8px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+/* BMI Scale */
+
+.bmi-scale {
+    margin-top: 28px;
+
+    padding: 22px;
+
+    background: #0e0e0e;
+
+    border: 1px solid #292929;
+
+    border-radius: 17px;
+}
+
+.bmi-scale h3 {
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    color: #dddddd;
+
+    margin-bottom: 16px;
+}
+
+.scale-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #242424;
+
+    color: #888888;
+
+    font-size: 13px;
+}
+
+.scale-row:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.scale-row span:last-child {
+    color: #dddddd;
+
+    font-weight: 500;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 22px;
+
+    text-align: center;
+
+    color: #555555;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 35px 22px;
+
+        border-radius: 22px;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+}
